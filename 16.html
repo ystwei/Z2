@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .warn{border:1px
+        solid red;color:red}
+        .test{width:400px;margin:100px
+        auto;padding:3px}
+    </style>
+    <script type="text/javascript">
+
+        function validate(e){
+            var key =window.event?e.keyCode:e.which;//unicode
+            var k=String.fromCharCode(key);//键盘值
+
+            var reg=/\d/
+            var d=document.getElementById("test");
+
+
+            if  (reg.test(k)) {
+                d.className='test';
+                return true;
+
+            }else{
+                d.className='warn';
+                return false;
+            }
+
+
+        }
+    </script>
+</head>
+<body>
+<div id="test" >
+    <input type="text"
+           style="ime-mode:Disabled;"
+           name="username" onkeypress="return validate(event)"/>
+</div>
+
+</body>
+</html>
