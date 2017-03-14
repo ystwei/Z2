@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="js/1.js"></script>
+
+</head>
+<body >
+    <form id="form1" name="form1" action="1.html" onsubmit="return s(false)">
+        <input type="button" name="button"  onclick="ok()"/>
+        <input type="text" name="username" onblur="ok(this);"/>
+
+        <input type="text" name="pwd" onchange="alert('123')"/>
+        <a href="1.html" onmouseover="alert('over')"
+           onmouseout="alert('out')">点击</a>
+
+
+        <a href="2.html" onmouseover="alert('over')"
+           onmouseout="alert('out')">点击2</a>
+        <input  type="submit"/>
+
+    </form>
+    <input type="button"
+           onclick="nwin=window.open('http://www.baidu.com','百度','toolbar=no,status=yes,width=400,height=100')"/>
+
+    <input type="button" value="close"
+           onclick="nwin.close();"/>
+    <input type="button" value="close2"
+           onclick="window.close()"/>
+    <input type="button" value="confirm" onclick="alert(confirm())"/>
+    <input type="button" value="prompt" onclick="alert(prompt('你叫啥？'))"/>
+</body>
+</html>
