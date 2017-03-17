@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="js/jquery-1.11.0.js">
+
+
+    </script>
+    <script type="text/javascript">
+        $(function(){
+
+           $("#msg").empty();
+           $("#msg").append("<span id='txt'>我的中国心</span>");
+           $("<span>用户名</span><input type='text' name='username' value='请输入你的名字'/>").appendTo(document.body);
+           $("#msg").css("background-color","red").css("border","10px solid black")
+
+        });//<body onload
+
+    </script>
+</head>
+<body>
+    <div id="msg">
+
+
+    </div>
+</body>
+</html>
