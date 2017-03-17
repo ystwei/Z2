@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function Animal(color,old){//相当于java的构造器
+            var age=200;//private
+            this.color=color;
+            this.old=old;
+            var speak=function(x,y){
+                alert(x+y);
+            }
+        }
+//        var a=new Animal();
+//        alert(a.color);
+
+        var a=new Animal('黑色',10);
+        alert(a.age);
+        //alert(a.color+a.old);
+        a.speak(1,2);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

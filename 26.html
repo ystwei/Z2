@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function Animal(){
+            //var age=20;
+
+        }
+        Animal.prototype.old=100;//原型扩展，使old变成了this全局类型
+        Animal.prototype.bug=function(x,y){
+
+            alert(x+y);
+        }
+        var a=new Animal();
+        alert(a.old);
+        a.bug(1,2);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

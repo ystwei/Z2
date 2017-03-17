@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+//        function ok(old){//基本类型做参数进行传值的时候，传递的是值。
+//            // 如果函数内部对其进行修改，自己本身不改变
+//            old=300;
+//        }
+//        var i=200;
+//        ok(i);
+//        alert(i);
+//如果形参是引用类型，传递的是本身地址，如果函数内部进行改变，也影响到函数外部的自己。
+        var a1=["red","green","blue"];
+        function ok(a){
+            a[1]="black";
+        }
+        ok(a1);
+        alert(a1[1]);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

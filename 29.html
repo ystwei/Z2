@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function Animal(){
+            this.color='yellow';
+            this.go=function(){
+                alert("Animal"+"go");
+            }
+        }
+        function Dog(){
+            this.age='yellow';
+            this.plan=function(){
+                alert("DOG"+this.color);
+            }
+            Animal.apply(this,arguments);
+            this.color="blue";
+            this.go=function(){//重写的写法
+                alert("DOG"+this.color);
+            }
+
+        }
+        var d=new Dog();
+        d.go();
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

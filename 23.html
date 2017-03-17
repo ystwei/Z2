@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function ok(x){//科里化 js的闭包 解决了变量可以记住其状态的问题。
+            return function(y){
+                return x*y;
+            }
+        }
+
+        var m=ok(4);
+        alert(m(2));
+        alert(m(3));
+        alert(m(4));
+
+        m=ok(5);//等效于java的static
+        alert(m(2));
+        alert(m(3));
+        alert(m(4));
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
