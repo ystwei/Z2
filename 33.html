@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+    <script>
+        $(function(){
+            $("#add").click(function(){
+                var tid=$("#test>tbody>tr:last").attr("id");
+                //parseInt(tid)+1
+                tid++;
+
+
+                s="<tr id = '"+tid+"'><td width='30%'>re1</td><td width='30%'>re2</td><td width='30%'>re3</td></tr>";
+
+                $('#test').append(s);
+
+
+
+            });
+
+            $("#del").click(function(){
+                var id=$("#test>tbody>tr:last").attr("id");
+
+                $("#"+id).remove();
+            });
+
+
+        });
+
+    </script>
+</head>
+<body>
+<table border="1px #ooo" id="test" cellpadding="0" cellspacing="0"
+       width="20%">
+    <tbody>
+    <tr id="1">
+        <td width="30%">1</td>
+        <td width="30%">2</td>
+        <td width="30%">3</td>
+    </tr>
+    <tr id="2">
+        <td width="30%">11</td>
+        <td width="30%">22</td>
+        <td width="30%">33</td>
+    </tr>
+
+    </tbody>
+</table>
+
+<input type="button" id="add" name="button" value="增加一行">
+<input type="button" name="button" id="del" value="删除一行">
+
+</body>
+</html>

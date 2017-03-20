@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+    <script>
+        $(function(){
+
+            $(".myselect option:selected").css("color","red");
+
+            $("#gender option:selected").css("color","red");
+            $(":input").val("卫昆");
+            $("#photo").attr("src","images/1.jpg");
+            $("#gender").change(function(){
+                $("#gender option").css("color","black");
+                $("#gender option:selected").css("color","red");
+
+            });
+        });
+
+    </script>
+</head>
+<body>
+<input id="user" type="text" />
+<br />
+<input id="pass" type="password" />
+<br />
+<textarea id="intro"></textarea>
+
+<br />
+<select id="gender" class="g">
+    <option value="male" >
+        男
+    </option>
+    <option value="male" >
+        男1
+    </option>
+    <option value="female"  selected="selected">
+        女
+    </option>
+</select>
+<br />
+<br />
+<br />
+足球<input id="pass" type="checkbox" checked="checked" value="xx" />
+<br />
+我的照片：
+<img alt="" src="" id="photo">
+
+
+<select name="myselect" class="myselect">
+
+    <option >html专区</option>
+
+    <option >test</option>
+
+    <option  selected="selected">JQuery专区</option>
+
+</select>
+
+</body>
+</html>

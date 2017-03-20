@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+
+    <script>
+        document.write("$.trim"+$.trim("  abc "))//去掉左右空格
+        $.each(["A","B","C"],function(i,val){//循环数组
+            document.write(i+":"+val);
+        });
+        document.write("<br/>")
+        document.write($.grep(["AB","BEF","CDFG"],function(val,i){//过滤数组
+            return val.length>3
+
+        }));
+        document.write("<br/>")
+        document.write($.map(["a","b","c"],function(val,i){//对数组进行新加工
+
+            return val+"OK";
+        }));
+    </script>
+</head>
+<body>
+
+</body>
+</html>
