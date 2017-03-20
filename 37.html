@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+    <script>
+
+        $(function () {
+            //alert($.trim($("div>div>div").get(1).innerHTML));
+            alert($.trim($("div>div").eq(0).html()));
+            alert($("div>div").length);
+        });
+    </script>
+</head>
+<body>
+<div>
+    <div id="java">
+        java
+        <div id="jav">
+            rrr
+        </div>
+    </div>
+    <div id="javaee">
+        Java EE
+        <div id="jav">
+            ttt
+        </div>
+    </div>
+    <div id="ajax">
+        Ajax
+    </div>
+    <div id="xml">
+        XML
+    </div>
+    <div id="Flex">
+        Flex
+    </div>
+    <div id="workflow">
+        jBPM
+    </div>
+</div>
+</body>
+</html>

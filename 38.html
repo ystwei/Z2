@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+    <script type="text/javascript" src="js/jquery.cookie.js">
+
+
+    </script>
+    <script>
+        $(function(){
+
+            $("#add").click(function(){
+
+                $.cookie("papaoku.org","weikun",{"expire":7});
+                $.cookie("papaokp.org","119",{"expire":7});
+            });
+
+            $("#get").click(function(){
+
+                alert($.cookie("papaoku.org"));
+
+            });
+            $("#del").click(function(){
+
+                $.cookie("papaoku.org","",{"expire":-1});
+                $.cookie("papaokp.org","",{"expire":-1});
+            });
+        });
+
+    </script>
+</head>
+<body>
+    <input type="button" id="add" value="增加"/>
+    <input type="button" id="del" value="删除"/>
+    <input type="button" id="get" value="取值"/>
+
+</body>
+</html>
